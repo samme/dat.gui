@@ -30,10 +30,12 @@ $input-color: lighten($background-color, 8.5%);
   margin-left: 5px;
   margin-top: 1px;
   border-radius: 2px;
-  font: small-caption;
+  font-size: 9px;
+  line-height: 7px;
   padding: 4px 4px 5px 4px;
   background: $button-color;
   color: #fff;
+  text-shadow: 0 1px 0 darken($button-color, 10%);
   box-shadow: 0 -1px 0 darken($button-color, 10%);
   cursor: pointer;
 }
@@ -51,7 +53,8 @@ $input-color: lighten($background-color, 8.5%);
 
 
   color: #eee;
-  font: caption;
+  font: 11px 'Lucida Grande', sans-serif;
+  text-shadow: 0 -1px 0 #111;
 
   /** Auto place */
   &.main {

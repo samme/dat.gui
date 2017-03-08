@@ -3,14 +3,11 @@
 <head>
 </head>
 <body>
-  <script type="text/javascript" src="build/dat.gui.js"></script>
+  <script type="text/javascript" src="build/dat.gui.min.js"></script>
   <script type="text/javascript">
-    var obj = { int: 5, str: '!', boo: true, float: 5.0 };
+    var obj = { x: 5 };
     var gui = new dat.GUI();
-	  for (var prop in obj) {
-	    if (obj.hasOwnProperty(prop)) gui.add(obj, prop);
-	  }
-    var folder = gui.addFolder('folder');
+	gui.add(obj, 'x');	
   </script>
 </body>
 </html>
